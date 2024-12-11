@@ -1,0 +1,66 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+    margin: 0; /* Removes default margin around the body */
+    padding: 0; /* Removes default padding around the body */
+    text-align: center; /* Centers text and elements within the body */
+    background-color: rgba(156, 151, 129, 0.596); /* for using bg colour */
+}
+
+/* Header styling */
+header {
+    background-color: #96b1ce; /* Sets the header background color to blue */
+    color: rgb(18, 15, 15); /* Sets the text color to white */
+    padding: 10px; /* Adds padding inside the header for spacing */
+}
+
+/* Traffic light container styling */
+#traffic-light {
+    display: inline-block; /* Makes the container inline and block-like */
+    margin: 20px auto; /* Centers the container with vertical and horizontal margins */
+    padding: 10px; /* Adds padding inside the traffic light container */
+    border: 2px solid #333; /* Adds a solid border around the container */
+    width: 100px; /* Sets the container width */
+    background-color: #000000; /* Sets the background color of the container to dark gray */
+}
+
+/* Common styles for each light (red, yellow, green) */
+.light {
+    width: 60px; /* Sets the width of the light */
+    height: 60px; /* Sets the height of the light */
+    margin: 10px auto; /* Centers each light with vertical spacing */
+    border-radius: 50%; /* Makes the lights circular */
+    background-color: #444; /* Sets the default inactive light color to dark gray */
+}
+
+/* Active state for the red light */
+.light.red.active {
+    background-color: red; /* Changes the color to red when active */
+}
+
+/* Active state for the yellow light */
+.light.yellow.active {
+    background-color: yellow; /* Changes the color to yellow when active */
+}
+
+/* Active state for the green light */
+.light.green.active {
+    background-color: green; /* Changes the color to green when active */
+}
+
+/* Controls section styling */
+#controls {
+    margin-top: 20px; /* Adds space above the controls section */
+   color: rgb(19, 20, 22);
+   text-align: center;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px; /* Adds padding inside the button for spacing */
+    background-color: #020202; /* Sets the button background color to blue */
+    color: white; /* Sets the button text color to white */
+    border: none; /* Removes the default border around the button */
+    border-radius: 5px; /* Adds rounded corners to the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the document type as HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding of the document to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the website is responsive and adjusts layout based on the screen size -->
+    <title>Traffic Light System</title>
+    <!-- Specifies the title of the webpage displayed in the browser tab -->
+    <link rel="stylesheet" href="trafic.css">
+    <!-- Links the external CSS file to style the page -->
+</head>
+<body>
+    <!-- Main content of the webpage -->
+    <header>
+        <!-- Defines the header section of the page -->
+        <h1>Traffic Light Management System</h1>
+        <!-- Main heading of the webpage -->
+    </header>
+    <main>
+        <!-- Main content area -->
+        <section id="traffic-light">
+            <!-- Section for displaying the traffic light system -->
+            <div class="light red"></div>
+            <!-- Represents the red light in the traffic light -->
+            <div class="light yellow"></div>
+            <!-- Represents the yellow light in the traffic light -->
+            <div class="light green"></div>
+            <!-- Represents the green light in the traffic light -->
+        </section>
+        <section id="controls">
+            <!-- Section for the user to control and adjust light timings -->
+            <h2>Adjust Timings</h2>
+            <!-- Subheading for the control section -->
+            <form id="timingForm">
+                <!-- Form to input and update traffic light timings -->
+                <label for="redTime">Red Light (seconds):</label>
+                <!-- Label for the red light timing input -->
+                <input type="number" id="redTime" min="5" required>
+                <!-- Input field for red light timing with a minimum value of 5 seconds -->
+                
+                <label for="yellowTime">Yellow Light (seconds):</label>
+                <!-- Label for the yellow light timing input -->
+                <input type="number" id="yellowTime" min="2" required>
+                <!-- Input field for yellow light timing with a minimum value of 2 seconds -->
+                
+                <label for="greenTime">Green Light (seconds):</label>
+                <!-- Label for the green light timing input -->
+                <input type="number" id="greenTime" min="5" required>
+                <!-- Input field for green light timing with a minimum value of 5 seconds -->
+                
+                <button type="submit">Update Timings</button>
+                <!-- Button to submit the form and update timings -->
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer section of the page -->
+        <p>&copy; 2024 Traffic Management System</p>
+        <!-- Footer text with a copyright notice -->
+    </footer>
+    <script src="trafic.js"></script>
+    <!-- Links the external JavaScript file for interactivity -->
+</body>
+</html>
